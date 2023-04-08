@@ -1,3 +1,8 @@
+* {
+
+    font-family: sans-serif;
+}
+
 body { 
     margin: 0; 
 }
@@ -9,11 +14,6 @@ canvas {
     position: relative;
 }
 
-h1 {
-
-    font-family: sans-serif;
-}
-
 /* a:link { 
     text-decoration: none; 
     font-weight: 300;
@@ -21,10 +21,7 @@ h1 {
 }
 
 
-a:visited { 
-    text-decoration: none; 
-    color: #000;
-}
+
 
 
 a:hover { 
@@ -34,11 +31,25 @@ a:hover {
 } */
 
 
-a:active { 
+a { 
     text-decoration: none; 
+    color: #000;
+}
+
+a:visited { 
+    /* color: #fff; */
+    color: #000;
 }
 
 button {
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#enter_btn {
     position: absolute;
     bottom: 50%;
     z-index: 1;
@@ -53,7 +64,42 @@ button {
     border-radius: 15%;
 }
 
-button:hover {
-    cursor: pointer;
-    
+.img_btn:hover {
+    cursor: zoom-in;
+}
+
+nav {
+    float: right;
+    margin-right: 10em;
+    margin-top: 20em;
+    /* background-color: rgb(25, 24, 24);
+    color: #FFF;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%; */
+}
+
+a.here {
+    color: rgb(180, 82, 255);
+}
+
+ul {
+    list-style-type: none;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+main {
+    overflow: scroll;
+    width: 100vh;
+    height: 100vh;
+    border-radius: 50%;
+    margin-left: 2em;
+}
+
+p {
+    text-align: center;
+    padding: 11em;
+    background-color: #000;
+    color: #fff;
 }
